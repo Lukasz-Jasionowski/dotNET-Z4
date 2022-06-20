@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<grupy_produktów>
+	<group nazwa="HDD">
+		<opis>Szczegóły dysków HDD</opis>
+		<opisKat>Rodzaje dysków HDD</opisKat>
+		<produkty>
+			<produkt>
+				<nazwa>Seagate</nazwa>
+				<cena>199.90</cena>
+				<rodzaj>3.5"</rodzaj>
+			</produkt>
+			<produkt>
+				<nazwa>Toshiba</nazwa>
+				<cena>229.90</cena>
+				<rodzaj>2.5"</rodzaj>
+			</produkt>
+		</produkty>
+	</group>
+	<group nazwa="SSD">
+		<opis>Szczegóły dysków SSD</opis>
+		<opisKat>Rodzaje dysków SSD</opisKat>
+		<produkty>
+			<produkt>
+				<nazwa>Adata</nazwa>
+				<cena>250.99</cena>
+				<rodzaj>2.5"</rodzaj>
+			</produkt>
+			<produkt>
+				<nazwa>Samsung</nazwa>
+				<cena>233.99</cena>
+				<rodzaj>M2</rodzaj>
+			</produkt>
+		</produkty>
+	</group>
+</grupy_produktów>

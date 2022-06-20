@@ -1,17 +1,21 @@
-﻿<Window x:Class="dotNET_Z4.MainWindow"
+﻿<Window x:Class="dotNET_Z4.Category"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:dotNET_Z4"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="400" FontSize="24">
+        Title="Category" Height="450" Width="400" FontSize="24">
     <Grid>
         <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
             <RowDefinition/>
             <RowDefinition Height="100"/>
         </Grid.RowDefinitions>
 
+        <TextBlock Grid.Row="0"
+            Text="{Binding XPath=opisKat}"
+            />
         <ListBox
             x:Name="listGrup"
             DataContext="{DynamicResource ResourceKey=Dane}"
@@ -20,13 +24,13 @@
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <TextBlock
-                        Text="{Binding XPath=@nazwa}"
+                        Text="{Binding XPath=opisKat}"
                         />
                 </DataTemplate>
             </ListBox.ItemTemplate>
         </ListBox>
-        <Button
-            Grid.Row="1" Click="Szczegóły"
+        <Button 
+            Grid.Row="2" Click="Szczegóły"
             >
             Szczegóły
         </Button>

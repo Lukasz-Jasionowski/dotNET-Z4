@@ -10,27 +10,28 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Xml;
 
 namespace dotNET_Z4
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for GroupDetails.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class GroupDetails : Window
     {
-        public MainWindow()
+        public GroupDetails(XmlNode group)
         {
+            DataContext = group;
             InitializeComponent();
         }
+
         private void Szczegóły(object sender, RoutedEventArgs e)
         {
             ListBox list = (ListBox)this.FindName("listGrup");
             XmlNode group = (XmlNode)list.SelectedItem;
             if (group != null)
-                new Category(group).Show();
+                new GroupDetails(group).Show();
         }
     }
 }
